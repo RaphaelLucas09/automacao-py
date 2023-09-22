@@ -1,0 +1,144 @@
+{
+    "cookies": [
+        {
+            "name": "mid",
+            "value": "ZNbqpAALAAG-3f6uX7ZiEHDdnj10",
+            "domain": ".instagram.com",
+            "path": "/",
+            "expires": 1726366373.381986,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "ig_did",
+            "value": "EDE96876-6B8E-47C6-9129-3A169A540DB7",
+            "domain": ".instagram.com",
+            "path": "/",
+            "expires": 1723342376.631351,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "ig_nrcb",
+            "value": "1",
+            "domain": ".instagram.com",
+            "path": "/",
+            "expires": 1723342373.382034,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "csrftoken",
+            "value": "a2pffLn672XoBUXv5p5lWuiPZ86Vy8Hu",
+            "domain": ".instagram.com",
+            "path": "/",
+            "expires": 1723255979.529568,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "ds_user_id",
+            "value": "60869187240",
+            "domain": ".instagram.com",
+            "path": "/",
+            "expires": 1699582379.529649,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "sessionid",
+            "value": "60869187240%3AuIhdfeV8QxqTdF%3A10%3AAYc9conO_wtEaQi2walEBC4OyYVA8K_MrSSajDJJWw",
+            "domain": ".instagram.com",
+            "path": "/",
+            "expires": 1723342376.431405,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "Lax"
+        },
+        {
+            "name": "test_cookie",
+            "value": "CheckForPermission",
+            "domain": ".doubleclick.net",
+            "path": "/",
+            "expires": 1691807278.696856,
+            "httpOnly": false,
+            "secure": true,
+            "sameSite": "None"
+        },
+        {
+            "name": "rur",
+            "value": "\"LDC\\05460869187240\\0541723342378:01f7521e83d365286f5cf756beec8eb1f5c3582816c06d5e472e95cb28776da6f0a3ace0\"",
+            "domain": ".instagram.com",
+            "path": "/",
+            "expires": -1,
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "Lax"
+        }
+    ],
+    "origins": [
+        {
+            "origin": "https://www.instagram.com",
+            "localStorage": [
+                {
+                    "name": "has_interop_upgraded",
+                    "value": "{\"lastCheckedAt\":1691806377959,\"status\":true}"
+                },
+                {
+                    "name": "Session",
+                    "value": "8gdcof:1691806411448"
+                },
+                {
+                    "name": "armadillo_msgr_mutex",
+                    "value": "spy32u"
+                },
+                {
+                    "name": "hb_timestamp",
+                    "value": "1691806373325"
+                },
+                {
+                    "name": "pigeon_state",
+                    "value": "{\"lastDeviceInfoTime\":0}"
+                },
+                {
+                    "name": "pixel_fire_ts",
+                    "value": "1691806378360"
+                },
+                {
+                    "name": "armadillo_msgr_local_takeover",
+                    "value": "spy32u"
+                },
+                {
+                    "name": "cu_sessions",
+                    "value": "[1691806377383]"
+                },
+                {
+                    "name": "banzai:last_storage_flush",
+                    "value": "1691806374290.2"
+                },
+                {
+                    "name": "fr",
+                    "value": "ASCGZtZ14XOkpdDa7lUwEXQJUYKIWMAmHjWzr98q3nRSo62fJjdFsxlZdG1g5bE3zlHzAEDXMmeOnIlg-N-Su9335qAC-a4su7lg-cSHyAROUZkj_v9aWKjDqPexMpIOeNkiPGg"
+                },
+                {
+                    "name": "cu_version",
+                    "value": "1"
+                }
+            ]
+        },
+        {
+            "origin": "https://www.facebook.com",
+            "localStorage": [
+                {
+                    "name": "Session",
+                    "value": "diuhci:1691806416384"
+                }
+            ]
+        }
+    ]
+}
