@@ -21,13 +21,8 @@ def run(playwright: Playwright) -> None:
     # ---------------------
     context.storage_state(path="state.json")
     
-    x = 0
-    for x in range(10):
-        return x
-    if x == 10:
-        context.close()
-        browser.close()
-
+    context.close()
+    browser.close()
 
 with sync_playwright() as playwright:
     run(playwright)
