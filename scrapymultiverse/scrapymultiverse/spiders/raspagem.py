@@ -1,27 +1,31 @@
-import scrapy
+import os
+import requests
+from bs4 import BeautifulSoup
 
-class ImageSpider(scrapy.Spider):
-    name = 'image_spider'
-    start_urls = [
-        'https://multiversocomicon.com.br/',
-    ]
+def get_image_links(url):
+    response = requests.get(url)
+    soup = BeautifulSoup(response.text, 'html.parser')
+    images = soup.find_all('a', {'data-bsrjs': True})
+    image_links = [img['data-bsrjs'] for img in images if 'data-bsrjs' in img.attrs]
+    
+    return image_links
 
-    def parse(self, response):
-        # Extrair links das imagens
-        image_urls = response.css('style data-bsrjs').extract()
+# Substitua 'https://www.example.com' pela URL do site que você deseja analisar
+image_links = get_image_links('https://multiversocomicon.com.br/')
 
-        # Iterar sobre os links das imagens
-        for img_url in image_urls:
-            # Baixar a imagem e especificar o nome do arquivo
-            yield scrapy.Request(url=img_url, callback=self.save_image)
+#for link in image_links:
+#    print(link)
 
-    def save_image(self, response):
-        # Extrair o nome da imagem do URL
-        image_name = response.url.split('/')[-1]
+def download_images(image_links, download_path):
+    if not os.path.exists(download_path):
+        os.makedirs(download_path)
 
-        # Especificar o diretório onde as imagens serão salvas
-        save_path = 'G:/Users/raphael/automacaopy/automacao-py/imagens teste' + image_name
+    for i, link in enumerate(image_links):
+        print(f"[+] Download {link}")
+        response = requests.get(link)
 
-        # Salvar a imagem no diretório especificado
-        with open(save_path, 'wb') as f:
-            f.write(response.body)
+        with open(os.path.join(download_path, f'image{i}.jpg'), 'wb') as f:
+            f.write(response.content)
+
+# Substitua '/path/to/download' pelo caminho onde você deseja salvar as imagens
+download_images(image_links, 'G:/Users/raphael/automacaopy/automacao-py/imagens teste')
