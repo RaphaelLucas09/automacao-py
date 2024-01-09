@@ -8,9 +8,9 @@ def run(playwright: Playwright) -> None:
     page.goto("https://www.instagram.com/accounts/login/")
     page.get_by_label("Telefone, nome de usuário ou email").click()
     page.get_by_label("Telefone, nome de usuário ou email").fill(
-        "fael9591@gmail.com")
+        #colocar o email aqui)
     page.get_by_label("Telefone, nome de usuário ou email").press("Tab")
-    page.get_by_label("Senha").fill("@uama1252")
+    page.get_by_label("Senha").fill(#colocar a senha)
     page.get_by_role("button", name="Entrar", exact=True).click()
     page.get_by_role("button", name="Agora não").click()
     page.get_by_role("button", name="Agora não").click()

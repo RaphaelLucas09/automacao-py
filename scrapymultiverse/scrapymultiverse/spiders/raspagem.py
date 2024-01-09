@@ -11,7 +11,7 @@ def get_image_links(url):
     return image_links
 
 # Substitua 'https://www.example.com' pela URL do site que você deseja analisar
-image_links = get_image_links('https://multiversocomicon.com.br/')
+image_links = get_image_links(#colocar a url do site)
 
 #for link in image_links:
 #    print(link)
@@ -28,4 +28,4 @@ def download_images(image_links, download_path):
             f.write(response.content)
 
 # Substitua '/path/to/download' pelo caminho onde você deseja salvar as imagens
-download_images(image_links, 'G:/Users/raphael/automacaopy/automacao-py/imagens teste')
+download_images(image_links, #colocar o caminho onde vai salvar as imagens)
